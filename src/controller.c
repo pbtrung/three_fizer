@@ -89,7 +89,7 @@ int runThreefizer(const arguments* args)
         if(error != 0)
         {
             status = error;
-            if(temp_file_name != NULL) { unlink(temp_file_name); }
+            if(temp_file_name != NULL) { unlink((char*)temp_file_name); }
         } //return the error if 1 occured
 
         //free alloated resources
